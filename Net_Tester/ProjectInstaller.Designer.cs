@@ -33,14 +33,17 @@
             // 
             // NetQuailtyTesterINstaller
             // 
+            this.NetQuailtyTesterINstaller.Account = System.ServiceProcess.ServiceAccount.NetworkService;
             this.NetQuailtyTesterINstaller.Password = null;
             this.NetQuailtyTesterINstaller.Username = null;
             // 
             // NetQualityTester
             // 
+            this.NetQualityTester.DelayedAutoStart = true;
             this.NetQualityTester.DisplayName = "Net Quality Tester";
             this.NetQualityTester.ServiceName = "Net_Tester";
             this.NetQualityTester.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
+            this.NetQualityTester.AfterInstall += NetQualityTester_AfterInstall;
             // 
             // ProjectInstaller
             // 
@@ -48,6 +51,10 @@
             this.NetQuailtyTesterINstaller,
             this.NetQualityTester});
 
+        }
+
+        private void NetQualityTester_AfterInstall(object sender, System.Configuration.Install.InstallEventArgs e)
+        {
         }
 
         #endregion

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net_Tester", "Net_Tester.csproj", "{FBE89C57-EF94-48F2-A15A-E15240507E7E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Net_Tester_Installer", "..\Net_Tester_Installer\Net_Tester_Installer.vdproj", "{F30041BE-28C2-477E-AC0E-FCD5D4E3ABE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{FBE89C57-EF94-48F2-A15A-E15240507E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBE89C57-EF94-48F2-A15A-E15240507E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBE89C57-EF94-48F2-A15A-E15240507E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30041BE-28C2-477E-AC0E-FCD5D4E3ABE8}.Debug|Any CPU.ActiveCfg = Debug
+		{F30041BE-28C2-477E-AC0E-FCD5D4E3ABE8}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
