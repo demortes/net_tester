@@ -28,13 +28,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_65529E55BC7A499EA528DB881E1E0745"
+        "OwnerKey" = "8:_60B5227B7B9E4E95BE4FEC319E05849D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_60B5227B7B9E4E95BE4FEC319E05849D"
+        "OwnerKey" = "8:_65529E55BC7A499EA528DB881E1E0745"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +55,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -71,6 +79,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -220,9 +244,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Net_Tester_Installer"
+        "ProductName" = "8:Demortes' Net Tester"
         "ProductCode" = "8:{E858594E-D53C-4F5D-B329-C0D22014D5F4}"
-        "PackageCode" = "8:{F7761667-F7D5-485B-80CB-D4A86399173D}"
+        "PackageCode" = "8:{1F6D4486-EA9B-4094-B705-A6E8604BE7CB}"
         "UpgradeCode" = "8:{7E590EAE-BEC9-4609-A679-BBD77F118DB8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -233,7 +257,7 @@
         "Manufacturer" = "8:Demortes"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Net_Tester_Installer"
+        "Title" = "8:Demortes' Net Tester"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Demortes"
         "Keywords" = "8:"
@@ -743,7 +767,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_60B5227B7B9E4E95BE4FEC319E05849D"
             {
-            "SourcePath" = "8:..\\Net_Tester\\obj\\Debug\\Net_Tester.exe"
+            "SourcePath" = "8:..\\Net_Tester\\obj\\Release\\Net_Tester.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D7DD1D46CB654D7F9459DB2E17C5F141"
