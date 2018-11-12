@@ -68,13 +68,15 @@ namespace Net_Tester
                             mail.Subject = subject;
                             mail.Body = logMessage;
                             var smtpHost = ConfigurationManager.AppSettings["SMTPServer"];
-                            var smtpPort = int.Parse(ConfigurationManager.AppSettings["EmailPort"]);
+                            var smtpPort = int.Parse(ConfigurationManager.AppSettings["SMTPPort"]);
                             var smtpTLS = bool.Parse(ConfigurationManager.AppSettings["SMTPTLS"]);
                             SmtpClient client = new SmtpClient();
+                            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                            client.UseDefaultCredentials = false;
+                            client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["SMTPUsername"], ConfigurationManager.AppSettings["SMTPPassword"]);
                             client.Port = smtpPort;
                             client.Host = smtpHost;
                             client.EnableSsl = smtpTLS;
-                            client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["SMTPUsername"], ConfigurationManager.AppSettings["SMTPPassword"]);
                             client.Send(mail);
                         }
 
