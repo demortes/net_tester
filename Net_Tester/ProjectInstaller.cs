@@ -15,5 +15,13 @@ namespace Net_Tester
         {
             InitializeComponent();
         }
+
+        private void NetQualityTester_AfterInstall_1(object sender, InstallEventArgs e)
+        {
+            using (System.ServiceProcess.ServiceController sc = new System.ServiceProcess.ServiceController(NetQualityTester.DisplayName))
+            {
+                sc.Start();
+            }
+        }
     }
 }

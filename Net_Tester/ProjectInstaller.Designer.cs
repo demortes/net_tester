@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.NetQuailtyTesterINstaller = new System.ServiceProcess.ServiceProcessInstaller();
+            this.NetQuailtyTesterInstaller = new System.ServiceProcess.ServiceProcessInstaller();
             this.NetQualityTester = new System.ServiceProcess.ServiceInstaller();
             // 
-            // NetQuailtyTesterINstaller
+            // NetQuailtyTesterInstaller
             // 
-            this.NetQuailtyTesterINstaller.Account = System.ServiceProcess.ServiceAccount.NetworkService;
-            this.NetQuailtyTesterINstaller.Password = null;
-            this.NetQuailtyTesterINstaller.Username = null;
+            this.NetQuailtyTesterInstaller.Account = System.ServiceProcess.ServiceAccount.NetworkService;
+            this.NetQuailtyTesterInstaller.Password = null;
+            this.NetQuailtyTesterInstaller.Username = null;
+            this.NetQuailtyTesterInstaller.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.NetQuailtyTesterINstaller_AfterInstall);
             // 
             // NetQualityTester
             // 
@@ -43,12 +44,12 @@
             this.NetQualityTester.DisplayName = "Net Quality Tester";
             this.NetQualityTester.ServiceName = "Net_Tester";
             this.NetQualityTester.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
-            this.NetQualityTester.AfterInstall += NetQualityTester_AfterInstall;
+            this.NetQualityTester.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.NetQualityTester_AfterInstall_1);
             // 
             // ProjectInstaller
             // 
             this.Installers.AddRange(new System.Configuration.Install.Installer[] {
-            this.NetQuailtyTesterINstaller,
+            this.NetQuailtyTesterInstaller,
             this.NetQualityTester});
 
         }
@@ -59,7 +60,7 @@
 
         #endregion
 
-        private System.ServiceProcess.ServiceProcessInstaller NetQuailtyTesterINstaller;
+        private System.ServiceProcess.ServiceProcessInstaller NetQuailtyTesterInstaller;
         private System.ServiceProcess.ServiceInstaller NetQualityTester;
     }
 }
