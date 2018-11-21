@@ -36,7 +36,6 @@
             this.NetQuailtyTesterInstaller.Account = System.ServiceProcess.ServiceAccount.NetworkService;
             this.NetQuailtyTesterInstaller.Password = null;
             this.NetQuailtyTesterInstaller.Username = null;
-            this.NetQuailtyTesterInstaller.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.NetQuailtyTesterINstaller_AfterInstall);
             // 
             // NetQualityTester
             // 

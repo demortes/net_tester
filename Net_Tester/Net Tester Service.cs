@@ -87,7 +87,7 @@ namespace Net_Tester
                                 eventLog.Source = "Application";
                                 var LogPacketLossAsError = bool.Parse(ConfigurationManager.AppSettings["EventViewerErrorPacketLoss"]);
                                 var EventType = (LogPacketLossAsError && fail > 0) ? EventLogEntryType.Error : EventLogEntryType.Information;
-                                eventLog.WriteEntry(logMessage, EventType, 101, 1);
+                                EventLog.WriteEntry(".NET Runtime", logMessage, EventType, 1000);
                             }
                         }
                     }
