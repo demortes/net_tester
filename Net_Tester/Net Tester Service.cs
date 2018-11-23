@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Net.NetworkInformation;
 using System.ServiceProcess;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Net_Tester
@@ -31,10 +32,10 @@ namespace Net_Tester
 
                     while (KeepRunning)
                     {
-                        while (DateTime.Now < (lastRun + runEveryTimespan))
+                        if(DateTime.Now < (lastRun + runEveryTimespan))
                         {
-                            if (KeepRunning == false)
-                                break;
+                            var waitFor = (lastRun + runEveryTimespan) - DateTime.Now;
+                            Thread.Sleep(waitFor);
                         }
                         if (KeepRunning == false)
                             break;
