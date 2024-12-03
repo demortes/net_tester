@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Network_Monitor.Library</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="MonitorTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MonitorTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SendGrid" Version="9.29.3" />
+  </ItemGroup>
+  
+</Project>
