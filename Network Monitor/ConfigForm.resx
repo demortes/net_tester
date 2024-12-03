@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,27 +117,187 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>181, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="materialListBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16px</value>
+  </data>
+  <data name="materialListBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 116</value>
+  </data>
+  <data name="materialListBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 49</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialListBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialListBox1.Name" xml:space="preserve">
+    <value>materialListBox1</value>
+  </data>
+  <data name="&gt;&gt;materialListBox1.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.MaterialListBox, ReaLTaiizor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialListBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;materialListBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 90</value>
+  </data>
+  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="metroLabel1.Text" xml:space="preserve">
+    <value>Targets</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
+    <value>metroLabel1</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.MetroLabel, ReaLTaiizor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 90</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 25</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>10, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+    <value>933, 519</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAIB8AAAEAIAAkEAAAFgAAACgAAAAgAAAAPgAAAAEAIAAAAAAAgA8AAMMOAADDDgAAAAAAAAAA
+        AADf3tz/5uXj/+jn5//e3Nj/kod7/15KN/9FLhT/PCQH/zwjBv87JAX/OyMF/zsjBv87IwX/OyQG/zsj
+        Bf87Iwb/OyMG/zsjBf88JAb/OyMG/zwjBf86JAX/OyMG/zwjBv88JAf/QisR/15KNv+TiH3/1tPR/+rs
+        7P/h4d//4eDe/+Hf3v/s6+v/s6yh/0cwGf8rEAD/LxQA/zAWAP80GgD/MxkA/zMaAP81GgD/MhgA/zIZ
+        AP8xFwD/MRgA/zMYAP8xFwD/MxkA/zEXAP8yGAD/MxkA/zIZAP80GgD/MxgA/zQaAP8yFwD/LxMA/ywQ
+        AP9IMBr/trCn/+rr6//h4N//8PHx/7Oso/86Igr/Tjgf/1A6H/9MNhv/VUEn/0o0Gf9POiD/SjUa/0o0
+        Gf9QOyH/UTwh/1dDKv9TPyX/Uz4l/1dDK/9QPCL/WEQr/1I9Iv9MNxz/Tjkf/0gyFv9QOyH/STIX/045
+        Hv9QOiD/TTcb/0ozG/81HAP/tK2k/+zs7P/d3Nn/RTAT/0EoDv9pWEH/eWpW/3xtWv9tXEb/cGBL/4J1
+        Y/+EdmT/fW9d/3ttWf9ROyb/W0Yu/1Q/Jf9UPiT/Wkcu/086Hv9cSC//Uj0o/35wW/9/cl7/f3Je/4J1
+        Y/+EdWL/emtY/3tsV/93ZlL/l4x7/zgeA/9HMRX/1NTS/4yBcv8tEwD/QioQ/2RSOv+5sKX/XUk5/5WI
+        eP96bFf/d2dW/3JhTP+Vinr/Tjge/2dUQv+HeGb/hHVi/4Z3ZP+EdWL/hXZi/4d4Zv9lU0D/VD4k/46C
+        cf94a1b/fW5Z/19LNP+5saf/eGlT/3lqWP92ZVD/Ri4U/y4SAP+OgXL/V0Ir/zMZAf88Iwv/Yk82/8O9
+        s/9GLhv/v7it/4h6aP9wYVL/iXtp/1pFLf9QPCX/bV5K/8jCu//W0cz/087I/9POyP/V0cz/yMK6/2lY
+        Q/9jUTz/WkYw/11KMP/Hwbj/VUAn/8jBuf+FdmL/cWFP/4l8av9NNhv/MBUB/1lEK/9BKQ7/OB4A/zYc
+        Av9lVD3/3tvW/7Goov/Hwrv/Y1E4/0kzGv8/Jgv/Kw8A/6WbjP9SPiP/JgoA/721rP/HwLn/x8C4/7qz
+        qf8pDgD/NRwA/6eekP88JAf/STIV/93Z0v9tW0b/ycK6/1U/Jf9LNB3/XUox/zgeA/83HgD/QioN/z4m
+        Cf8zGgD/STEV/6ukmP/3+Pb/xr+0/39xYv9jUDf/a1pF/1dCLf9dSjP/ZFM8/19NNf9gSzX/pZuP/7+4
+        r/+/uK//pJqN/2BMNf9cSTH/XUoy/1E7Iv9KNBn/oJWK/9zY0//a19D/gnVj/46Ccf+OgXD/MBUA/zgg
+        Af9AJwr/PiYJ/zQaAP9HMBP/uLKn//f39f/OysH/o5mL/7Kqnv/7+/z//v/+///////9//7///////3+
+        /f/08/H/jH9u/42BcP/08/L//v7+//3+/v//////lop6/4l9bv9cSjn/vrar/9va0/+nnY//RSwO/z4l
+        B/84HwH/Nx4A/0AoCf89JQn/Nx8C/zMaAv+9tqv/8O7s/+no5P+NgW//8/Pw//39/P/6+/n/+/v5//z8
+        +v/7+/r/+fn3//////+Zjn//m5GB///////3+PX//P38/+Ti3P9cSTH/joF0/722rP//////9/f2/722
+        rf8xFQD/MxoA/zggAf83HgD/QCcJ/z0lCf83HwH/Nh0B/zgeBv+ek4T/eWtZ/0cxG/+roZT/t6yg/7es
+        ov+3raL/t62j/7esov+1q5//s6ug/7+4r//BuK//taqf/7OqoP+yqJz/e2pW/8O9tf9oVj//XUoy/6mf
+        k/+2rqP/c2JN/0ozIP9MNhz/Nh4A/zceAP9BKAr/PSQI/zgeAP85IQP/LxUA/9HMw/+Uh3f/iHlo/93a
+        1f+hlpD/oJWH/5+Vh/+flIb/o5iL/6yjlv+tpJj/p52R/6edkP+tpJj/rqWZ/5mOhP+YjHz/p52P/4Fz
+        Yf9sW0n/mo+B/66lmP9POh//qqOW/6yjlf9AJwv/NhsA/0EoCv8+JQn/Nx4A/zgfAf83HgD/PygL/ygM
+        AP/FvrT/hHdj/ywRAP9vXkn/a1lD/21cR/9ZRCz/KQ4A/yEGAP80GwD/NBsA/yEFAP8rEQD/KxAA/5WJ
+        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
+        AAAAAAAAAAAAAAAAAAA=
+</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Network Monitor Config and Control</value>
   </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>ReaLTaiizor.Forms.MetroForm, ReaLTaiizor, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Network_Monitor.Library;
+using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Windows.Forms;
@@ -7,6 +9,7 @@ namespace Network_Monitor
 {
     internal static class Program
     {
+        private static Configuration Config;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -25,16 +28,21 @@ namespace Network_Monitor
 
             if (!File.Exists(fullPath))
             {
-                File.CreateText(fullPath).WriteAsync(Newtonsoft.Json.JsonConvert.SerializeObject(new Network_Monitor.Library.Configuration(), Newtonsoft.Json.Formatting.Indented));
+                var fileHandler = File.CreateText(fullPath);
+                fileHandler.Write(JsonConvert.SerializeObject(new Network_Monitor.Library.Configuration(), Newtonsoft.Json.Formatting.Indented));
+                fileHandler.Close();
                 firstRun = true;
             }
 
-            var Config = new ConfigurationBuilder()
-                .SetBasePath(appDataPath)
-                .AddJsonFile(configFileName, true, true);
+            Config = JsonConvert.DeserializeObject<Configuration>(File.ReadAllText(fullPath));
 
             Application.EnableVisualStyles();
+#if NETCOREAPP3_1 || NET6_0 || NET7_0 || NET8_0 || NET9_0
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+#endif
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // Set up tray icon.
             NotifyIcon trayIcon = new();
 
             var menuItems = new ToolStripMenuItem[]
@@ -50,18 +58,13 @@ namespace Network_Monitor
             trayIcon.Text = "Network Monitor";
             trayIcon.Visible = true;
 
+            // Run without a form.
             Application.Run();
-            if (firstRun)
-            {
-                //First run, pop up configuration.
-                var configForm = new ConfigForm();
-                configForm.Show();
-            }
         }
 
         private static void Configure_Click(object sender, EventArgs e)
         {
-            new ConfigForm().Show();
+            new ConfigForm(Config).Show();
         }
 
         private static void Exit_Click(object sender, EventArgs e)
