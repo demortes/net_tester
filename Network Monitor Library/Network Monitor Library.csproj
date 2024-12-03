@@ -7,6 +7,7 @@
     <Compile Remove="MonitorTask.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Include="MonitorTask.cs" />
   </ItemGroup>
   <ItemGroup>

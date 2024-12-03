@@ -44,6 +44,7 @@ namespace Network_Monitor
             var menuItems = new ToolStripMenuItem[]
             {
                 //new MenuItem("Config", Config_Click, Shortcut.CtrlShiftC),
+                new("Configure", null, Configure_Click),
                 new("Exit", null, Exit_Click)
             };
             // TODO ContextMenu is no longer supported. Use ContextMenuStrip instead. For more details see https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls
@@ -61,6 +62,11 @@ namespace Network_Monitor
                 var configForm = new ConfigForm();
                 configForm.Show();
             }
+        }
+
+        private static void Configure_Click(object sender, EventArgs e)
+        {
+            new ConfigForm().Show();
         }
 
         private static void Exit_Click(object sender, EventArgs e)
