@@ -1,10 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Network_Monitor
@@ -39,15 +35,14 @@ namespace Network_Monitor
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            NotifyIcon trayIcon = new NotifyIcon();
-            // TODO MenuItem is no longer supported. Use ToolStripMenuItem instead. For more details see https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls
+            NotifyIcon trayIcon = new();
+
             var menuItems = new ToolStripMenuItem[]
             {
                 //new MenuItem("Config", Config_Click, Shortcut.CtrlShiftC),
                 new("Configure", null, Configure_Click),
                 new("Exit", null, Exit_Click)
             };
-            // TODO ContextMenu is no longer supported. Use ContextMenuStrip instead. For more details see https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls
             var cms = new ContextMenuStrip();
             cms.Items.AddRange(menuItems);
             trayIcon.ContextMenuStrip = cms;
@@ -56,7 +51,7 @@ namespace Network_Monitor
             trayIcon.Visible = true;
 
             Application.Run();
-            if(firstRun)
+            if (firstRun)
             {
                 //First run, pop up configuration.
                 var configForm = new ConfigForm();
