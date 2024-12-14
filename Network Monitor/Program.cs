@@ -2,6 +2,7 @@
 using Network_Monitor.Library;
 using Newtonsoft.Json;
 using System;
+using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
 
@@ -58,8 +59,12 @@ namespace Network_Monitor
             trayIcon.Text = "Network Monitor";
             trayIcon.Visible = true;
 
+            // Set up background Task.
+            
+
             // Run without a form.
             Application.Run();
+
         }
 
         private static void Configure_Click(object sender, EventArgs e)

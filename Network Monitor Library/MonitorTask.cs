@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
-using Windows.ApplicationModel.Background;
 
-namespace Network_Monitor.Tasks
+namespace Network_Monitor.Library.Tasks
 {
-    public sealed class NetworkMonitorTask : IBackgroundTask
+    public sealed class NetworkMonitorTask : IBack
     {
         /// <summary>
         /// Configuration to be used during completion of the tasks.
